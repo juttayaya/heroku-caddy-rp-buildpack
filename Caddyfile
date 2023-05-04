@@ -1,0 +1,4 @@
+reverse_proxy https://gcp-staging.polywork.com/ {
+		header_up Host {upstream_hostport}
+}
+
