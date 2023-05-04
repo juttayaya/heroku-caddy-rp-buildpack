@@ -1,4 +1,4 @@
-0.0.0.0:2019 {
+:<%= ENV["PORT"] %> {
   reverse_proxy https://gcp-staging.polywork.com {
     header_up Host {upstream_hostport}
   }
