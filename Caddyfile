@@ -1,5 +1,3 @@
-https://heroku-caddy-rp-buildpack.herokuapp.com/ {
-  reverse_proxy https://gcp-staging.polywork.com/ {
-    header_up Host {upstream_hostport}
-  }
+reverse_proxy https://gcp-staging.polywork.com {
+  header_up Host {upstream_hostport}
 }
